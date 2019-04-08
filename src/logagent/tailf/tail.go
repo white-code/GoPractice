@@ -75,7 +75,6 @@ func Inittail(collectconf []Collectconf)(err error){
 			fmt.Println("TailFile 出错:", err)
 			return
 		}
-
 		tailObjMgr.TailObjs = append(tailObjMgr.TailObjs,obj)
 		go readFormTail(obj)
 
